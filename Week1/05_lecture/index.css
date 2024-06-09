@@ -1,0 +1,54 @@
+*{
+    margin:20px;
+    padding: 0;
+    background-color: rgb(208, 218, 218);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.usingclass{
+    background-color: black;
+    display: inline;
+    color: red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#usingid{
+    color: blue;
+    margin-top: 50px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h4{
+    color:darkcyan;
+    font-style: oblique;
+}
+
+.descedent_selector p{
+    border: 3px inset gray;
+    text-align: center;
+    width: fit-content;
+    padding: 10px 20px ;
+    color: black;
+}
+
+.childselector > p{
+    background-color: yellow;
+    padding: 6px 3px;
+    border: 1px solid gray;
+}
+
+.add+p{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: azure;
+    background-color: darkslategrey;
+}
+
+.betweenall~p{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: azure;
+    background-color: darkslategrey;
+}

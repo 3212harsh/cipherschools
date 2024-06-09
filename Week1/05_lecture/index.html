@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS selectors</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2 class="usingclass">This Css is using class</h2>
+    <br>
+    <h2 id="usingid">This CSS is using ID</h2>
+    <br>
+    <h4>Using CSS directly with tag name</h4>
+    <br>
+
+    <div class="descedent_selector">
+        <p>Using CSS with the help of Descedent selectors</p>
+    </div>
+
+    <br>
+    <div class="childselector">
+        <p>This is using child selector and its the direct p tag inside div</p>
+        <span>
+            <p>This is also under div but not wrapped inside a span and not directly under parent div so it
+                will not get css properties.
+            </p>
+        </span>
+    </div>
+    <div>
+        <div class="add">This is para 1</div>
+        <p>This is para 2</p>
+        <p>This is para 3</p>
+        <p>This is para 4</p>
+    </div>
+    <br><hr><br>
+    <div>
+        <div class="betweenall">This is para 1</div>
+        <p>This is para 2</p>
+        <p>This is para 3</p>
+        <p>This is para 4</p>
+    </div>
+
+</body>
+</html>
