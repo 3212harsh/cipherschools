@@ -52,3 +52,27 @@ h4{
     color: azure;
     background-color: darkslategrey;
 }
+
+button{
+    padding: 5px 10px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(4, 208, 65);
+    font-size: larger;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a[target]{
+    color: blue;
+}
