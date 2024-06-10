@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chaset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./test.css" />
+    <title>Page Title</title>
+  </head>
+  <body>
+    <main>
+      <h1 onclick="changetext(this)">Click Me</h1>
+
+    <br>
+    <button onclick="display()">Time is : </button>
+    <span id="demo"></span>
+        <br><br>
+    <input type="text" id="firstname" onchange="upper()">
+    <br>
+    <br>
+    <br><br>
+
+    <span onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: red;cursor: pointer; color: white; font-size: larger; padding: 20px; transition: 0.7s; border-radius: 20px;">Mouse Over Me</span>
+
+    <span onmouseup="mUp(this)" onmousedown="mDown(this)" style="background-color: green;cursor: pointer; color: white; font-size: larger; padding: 20px; border-radius: 20px;">Release me</span>
+
+    </main>
+  </body>
+  <script>
+    function changetext(id){
+        id.innerHTML = "This is after click"
+    }
+
+    function display(){
+        document.getElementById('demo').innerHTML = new Date();
+    }
+
+    function upper(){
+        let x = document.getElementById('firstname');
+        x.value = x.value.toUpperCase();
+    }
+
+    function mOver(obj){
+        obj.innerHTML="Thanks for over";
+        obj.style.backgroundColor='blue';
+
+    }
+    function mOut(obj){
+        obj.innerHTML="Mouse Over Me"
+        obj.style.backgroundColor='red';
+    }
+
+    function mDown(obj){
+        obj.innerHTML="Thankyou"
+        obj.style.backgroundColor='purple';
+    }
+    function mUp(obj){
+        obj.innerHTML="Release Me"
+        obj.style.backgroundColor='green';
+    }
+  </script>
+
+</html>
+
+</body>
+</html>
